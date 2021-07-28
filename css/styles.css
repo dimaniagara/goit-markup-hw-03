@@ -327,6 +327,10 @@ address {
   display: flex;
   justify-content: center;
 }
+.secondary-button {
+  border: none;
+  border-radius: 4px;
+}
 .secondary-button:hover,
 .secondary-button:focus {
   display: inset-block;
@@ -334,4 +338,23 @@ address {
   color: var(--secondary-color);
   cursor: pointer;
   color: var(--secondary-color);
+}
+.options-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1230px;
+  padding-left: 15px;
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.options-list .options {
+  margin-right: 30px;
+}
+.option-title {
+  margin-top: 20px;
+}
+.option-text {
+  margin-top: 4px;
 }
