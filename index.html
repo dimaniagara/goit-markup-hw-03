@@ -8,7 +8,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./css/styles.css" />
 </head>
 
@@ -17,22 +17,18 @@
 	<header class="header">
 		<div class="container main-nav">
 		<nav class="nav">
-			<div class="main-logo"><a href="./index.html" class="logo"><span class="logoheader">Web</span>Studio</a></div>
-			<div class="nav-contacts">
+			<a href="./index.html" class="logo"><span class="logoheader">Web</span>Studio</a>
 			<ul class="nav-links list-contacts">
 				<li><a href="./index.html" class="nav-link">Студия</a></li>
 				<li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
 				<li><a href="#" class="nav-link">Контакты</a></li>
 			</ul>
-		</div>
 		</nav>
-		<div class="info-list">
-		<ul class="contacts list">
+		<ul class="contacts list info-list">
 			<li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
 			<li><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
 		</ul>
-	</div>
-	</div>
+   </div>
 	</header>
 <main class="main">
 <!--Hero Section-->
@@ -43,7 +39,7 @@
 		   </div>
 		</section>
 <!--Advantages-->
-		<section class="advantages">
+		<section class="advantages section">
 			<div class="container advantage-list">
 			<h2 class="invisible">Преимущества веб-студии</h2>
 			<ul class="advantages menu-list">
@@ -67,35 +63,39 @@
 		</div>
 			</section>
 <!--Examples-->
-			<section class="examples">
+			<section class="examples section">
+				<div class="container">
 			<h2 class="example-title">Чем мы занимаемся</h2>
 			<ul class="examples-list">
 				<li class="example"><img src="./images/pic1.jpg" alt="Разработка кода" width="370"/></li>
 				<li class="example"><img src="./images/pic2.jpg" alt="Тестирование" width="370"/></li>
 				<li class="example"><img src="./images/pic3.jpg" alt="Дизайн" width="370"/></li>
 			</ul>
+		</div>
 			</section>
 <!--Team Members-->
-		<section class="team">
+		<section class="team section">
+			<div class="container">
 			<h2 class="team-header">Наша команда</h2>
 			<ul class="team-name">
 				<li class="team-member">
-					<img src="./images/pic4.jpg" alt="Дизайнер продукта" width="270" />
+					<div class="image-border"><img src="./images/pic4.jpg" alt="Дизайнер продукта" width="270" />
 					<h3 class="team-title">Игорь Демьяненко</h3>
-					<p class="team-text">Product Designer</p></li>
+					<p class="team-text">Product Designer</p></div></li>
 				<li class="team-member">
-					<img src="./images/pic5.jpg" alt="Фронт енд разработчик" width="270" />
+					<div class="image-border"><img src="./images/pic5.jpg" alt="Фронт енд разработчик" width="270" />
 					<h3 class="team-title">Ольга Репина</h3>
-					<p class="team-text">Frontend Developer</p></li>
+					<p class="team-text">Frontend Developer</p></div></li>
 				<li class="team-member">
-					<img src="./images/pic6.jpg" alt="Маркетолог" width="270" />
+					<div class="image-border"><img src="./images/pic6.jpg" alt="Маркетолог" width="270" />
 					<h3 class="team-title">Николай Тарасов</h3>
-					<p class="team-text">Marketing</p></li>
+					<p class="team-text">Marketing</p></div></li>
 				<li class="team-member">
-					<img src="./images/pic7.jpg" alt="Дизайнер пользовательских интерфейсов" width="270" />
+					<div class="image-border"><img src="./images/pic7.jpg" alt="Дизайнер пользовательских интерфейсов" width="270" />
 					<h3 class="team-title">Михаил Ермаков</h3>
-					<p class="team-text">UI Designer</p></li>
+					<p class="team-text">UI Designer</p></div></li>
 			</ul>
+		</div>
 		</section>
 	</main>
 <!--Footer-->

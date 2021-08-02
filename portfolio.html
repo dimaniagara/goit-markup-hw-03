@@ -8,7 +8,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./css/styles.css" />
 </head>
 
@@ -17,21 +17,17 @@
 <header class="header">
 	<div class="container main-nav">
 	<nav class="nav">
-		<div class="main-logo"><a href="./index.html" class="logo"><span class="logoheader">Web</span>Studio</a></div>
-		<div class="nav-contacts">
+		<a href="./index.html" class="logo"><span class="logoheader">Web</span>Studio</a>
 		<ul class="nav-links list-contacts">
 			<li><a href="./index.html" class="nav-link">Студия</a></li>
 			<li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
 			<li><a href="#" class="nav-link">Контакты</a></li>
 		</ul>
-	</div>
 	</nav>
-	<div class="info-list">
-	<ul class="contacts list">
+	<ul class="contacts list info-list">
 		<li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
 		<li><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
 	</ul>
-</div>
 </div>
 </header>
 	<main class="main">
@@ -50,9 +46,9 @@
 			<p class="option-text">Веб-сайт</p>
 		</li>
 		<li class="options">
-			<img src="./images/pic9.jpg" alt="Баскетбол" width="370"/>
+			<div class="options-mage"><img src="./images/pic9.jpg" alt="Баскетбол" width="370"/>
 			<h3 class="option-title">Постер New Orlean vs Golden Star</h3>
-			<p class="option-text">Дизайн</p>
+			<p class="option-text">Дизайн</p></div>
 		</li>
 		<li class="options">
 			<img src="./images/pic10.jpg" alt="Рыба" width="370"/>

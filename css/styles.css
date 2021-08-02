@@ -12,7 +12,20 @@ body {
   color: var(--primary-text-color);
   background-color: var(--secondary-color);
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
 .invisible {
   display: none;
 }
@@ -47,11 +60,14 @@ header {
   display: flex;
   align-items: center;
 }
-.main-nav {
+.container {
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
   width: 1200px;
-  height: 80;
+}
+.list li {
+  margin-left: 50px;
 }
 .nav-contacts {
   margin-left: 93px;
@@ -59,7 +75,7 @@ header {
 .list-contacts {
   list-style: none;
   display: flex;
-  margin-right: 50px;
+  margin-left: 50px;
 }
 .list-contacts li {
   margin-right: 50px;
@@ -71,6 +87,9 @@ header {
 }
 .list-contacts .nav-link:last-child {
   margin-right: 0;
+}
+.main-nav .contacts:first-child {
+  margin-left: 0;
 }
 .nav-link {
   text-decoration: none;
@@ -105,15 +124,12 @@ header {
 .contact:focus {
   color: var(--accent-color);
 }
-.list li {
-  margin-left: 50px;
-}
 
 /*Hero Section */
 .hero-section {
   background-color: #2f303a;
   text-align: center;
-  padding: 200px 252px;
+  padding: 200px 0;
 }
 
 h1 {
@@ -137,7 +153,7 @@ h1 {
   background-color: var(--accent-color);
   color: var(--secondary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  border: none;
   cursor: pointer;
   border-radius: 4px;
   text-align: center;
@@ -204,8 +220,11 @@ h1 {
   line-height: 1, 875;
   letter-spacing: 0.03em;
 }
+.advantages {
+  padding-bottom: 0;
+}
 .advantages-title {
-  margin-bottom: 10;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.15;
@@ -226,6 +245,10 @@ h1 {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+}
+.example-title,
+.team-header {
+  margin-bottom: 30px;
 }
 .team-header {
   font-weight: bold;
@@ -250,13 +273,28 @@ h1 {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-title .team-text {
+.team-title,
+.team-text {
   text-align: center;
-  display: block;
+}
+.team-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.team-text {
+  padding-bottom: 30px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--secondary-color);
+}
+.image-border {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team {
-  padding-top: 94;
-  padding-bottom: 94;
   background-color: var(--third-color);
 }
 .work {
@@ -265,25 +303,25 @@ h1 {
 
 /* footer */
 footer {
-  background-color: var(--main-color);
+  padding: 60px 0;
+  background-color: #2f303a;
 }
 .logo-second {
-  display: block;
   text-decoration: none;
+  font-family: "Raleway", Arial, sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  padding-left: 15px;
-  padding-top: 60px;
-  padding-bottom: 161;
+  display: block;
 }
 .main-footer {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  height: 80;
+  height: 80px;
 }
 .logofooter {
   color: var(--secondary-color);
@@ -296,13 +334,6 @@ address {
   letter-spacing: 0.03em;
   color: var(--primary-text-color5);
 }
-
-.address {
-  list-style: none;
-  padding-left: 15px;
-  padding-bottom: 60px;
-  margin-left: 0;
-}
 .location {
   text-decoration: none;
   color: var(--secondary-color);
@@ -313,27 +344,27 @@ address {
 }
 /* Portfolio */
 .work-button {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-left: 8px;
 }
 .button-list {
   display: flex;
   justify-content: center;
 }
 .secondary-button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
   border: none;
   border-radius: 4px;
 }
 .secondary-button:hover,
 .secondary-button:focus {
-  display: inset-block;
   background-color: var(--accent-color);
   color: var(--secondary-color);
   cursor: pointer;
@@ -348,6 +379,11 @@ address {
   padding-top: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+.options-image {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 .options-list .options {
   margin-right: 30px;
