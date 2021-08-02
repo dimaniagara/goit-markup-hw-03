@@ -29,6 +29,12 @@ ul {
 .invisible {
   display: none;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 
 /* Header */
 header {
@@ -60,12 +66,6 @@ header {
   display: flex;
   align-items: center;
 }
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-  width: 1200px;
-}
 .list li {
   margin-left: 50px;
 }
@@ -88,7 +88,7 @@ header {
 .list-contacts .nav-link:last-child {
   margin-right: 0;
 }
-.main-nav .contacts:first-child {
+.contacts li:first-child {
   margin-left: 0;
 }
 .nav-link {
@@ -163,6 +163,10 @@ h1 {
 /*Advantages */
 .advantage {
   list-style: none;
+  padding-right: 30px;
+}
+.advantages li:last-child {
+  padding-right: 0;
 }
 .menu-list {
   display: flex;
@@ -289,6 +293,9 @@ h1 {
   padding-bottom: 94px;
   background-color: var(--secondary-color);
 }
+.section.advantages {
+  padding-bottom: 0;
+}
 .image-border {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -380,13 +387,9 @@ address {
   margin-left: auto;
   margin-right: auto;
 }
-.options-image {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-}
 .options-list .options {
   margin-right: 30px;
+  border: solid 1px #eeeeee;
 }
 .option-title {
   margin-top: 20px;
