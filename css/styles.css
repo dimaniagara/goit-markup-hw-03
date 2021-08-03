@@ -11,6 +11,7 @@ body {
   line-height: 1.714;
   color: var(--primary-text-color);
   background-color: var(--secondary-color);
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -53,9 +54,6 @@ header {
 .logoheader {
   color: var(--accent-color);
 }
-.list {
-  list-style: none;
-}
 .info-list {
   margin-left: auto;
 }
@@ -73,11 +71,11 @@ header {
   margin-left: 93px;
 }
 .list-contacts {
-  list-style: none;
+  align-items: center;
   display: flex;
-  margin-left: 50px;
+  margin-left: 93px;
 }
-.list-contacts li {
+.list-contacts li:not(:last-child) {
   margin-right: 50px;
 }
 .list-contacts .nav-link {
@@ -161,69 +159,6 @@ h1 {
 }
 
 /*Advantages */
-.advantage {
-  list-style: none;
-  padding-right: 30px;
-}
-.advantages li:last-child {
-  padding-right: 0;
-}
-.menu-list {
-  display: flex;
-  justify-content: center;
-}
-.menu-list .advantage {
-  width: 270px;
-}
-
-/*Examples */
-.example {
-  list-style: none;
-}
-.examples-list {
-  display: flex;
-  padding-top: 50px;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-}
-.examples-list .example {
-  margin-right: 30px;
-}
-
-/*Team Members */
-.team-member {
-  list-style: none;
-}
-.team-name {
-  padding-top: 50px;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-.team-name .team-member {
-  margin-right: 30px;
-}
-.work-button {
-  list-style: none;
-}
-.options {
-  list-style: none;
-}
-.option-title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--main-color);
-}
-.option-text {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1, 875;
-  letter-spacing: 0.03em;
-}
 .advantages {
   padding-bottom: 0;
 }
@@ -242,6 +177,21 @@ h1 {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.advantage:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages li:last-child {
+  padding-right: 0;
+}
+.menu-list {
+  display: flex;
+  justify-content: center;
+}
+.menu-list .advantage {
+  width: 270px;
+}
+
+/*Examples */
 .example-title {
   font-weight: bold;
   font-size: 36px;
@@ -253,6 +203,46 @@ h1 {
 .example-title,
 .team-header {
   margin-bottom: 30px;
+}
+.example {
+  list-style: none;
+}
+.examples-list {
+  display: flex;
+  justify-content: center;
+}
+.example:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*Team Members */
+.team-name {
+  display: flex;
+  align-items: center;
+}
+.team-member:not(:last-child) {
+  margin-right: 30px;
+}
+.team-member {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.options {
+  list-style: none;
+}
+.option-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+.option-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
 }
 .team-header {
   font-weight: bold;
@@ -277,16 +267,8 @@ h1 {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-title,
-.team-text {
-  text-align: center;
-}
 .team-title {
-  margin-top: 30px;
   margin-bottom: 10px;
-}
-.team-text {
-  padding-bottom: 30px;
 }
 .section {
   padding-top: 94px;
@@ -296,10 +278,8 @@ h1 {
 .section.advantages {
   padding-bottom: 0;
 }
-.image-border {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+.team-description {
+  padding: 30px 0;
 }
 .team {
   background-color: var(--third-color);
@@ -323,12 +303,7 @@ footer {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   display: block;
-}
-.main-footer {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  height: 80px;
+  margin-bottom: 20px;
 }
 .logofooter {
   color: var(--secondary-color);
@@ -340,6 +315,10 @@ address {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--primary-text-color5);
+  margin-bottom: 0;
+}
+.address li:not(:last-child) {
+  margin-bottom: 9px;
 }
 .location {
   text-decoration: none;
@@ -350,6 +329,11 @@ address {
   color: var(--primary-text-color);
 }
 /* Portfolio */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .work-button {
   font-weight: 500;
   font-size: 16px;
@@ -360,13 +344,17 @@ address {
 .button-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .secondary-button {
   padding: 6px 22px;
   margin-right: 8px;
   border: none;
   border-radius: 4px;
+}
+.active {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
 .last-button {
   margin-right: 0;
@@ -381,22 +369,21 @@ address {
 .options-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 1230px;
-  padding-left: 15px;
-  padding-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 .options-list .options {
   margin-right: 30px;
   margin-bottom: 30px;
-  border: solid 1px #eeeeee;
+  border: 1px solid #eeeeee;
+  flex-basis: calc(100% / 3 - 30px);
 }
-.option-title {
-  padding-top: 20px;
-  padding-left: 24px;
+.options-description-wrapper {
+  padding: 20px 24px;
 }
-.option-text {
-  padding: 4px 24px 20px;
+a.current:link,
+a.current:visited {
+  color: var(--accent-color);
+  background-color: none;
 }
